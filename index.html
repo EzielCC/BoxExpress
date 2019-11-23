@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+  <head>
+
+    <title>Inicio de Sesión BoxExpress</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+  	<link rel="stylesheet" href="css/BoxExpress.css" >
+  	<link rel="stylesheet" href="css/custom.css">
+  	<link rel="stylesheet" href="css/Formato.css">
+
+  </head>
+
+  <body>
+    <div >
+  		<h1><center><img class="BoxExpress" src="images/BoxExpress.png"></center></h1>
+  	</div>
+
+  	<div class="container">
+		<div class="container-fluid">
+			<div >
+				<div class="col-lg-12">
+					<div class="card">
+						<div class="loginBox">
+
+							<form action="PHP/check-login.php" method="post">
+								<div class="form-group">
+									<input type="text" class="form-control input-lg" name="Txt_User" placeholder="Email o Nombre de usuario..." required>
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control input-lg" name="Txt_Password" placeholder="Contraseña..." required>
+								</div>
+									<button type="submit" class="btn btn-success btn-block">Entrar</button>
+							</form>
+
+              <!-- Collapse a form when user click Lost your password? link-->
+              <p><a href="#showForm" data-toggle="collapse" aria-expanded="false" aria-controls="collapse">¿Perdiste tu contraseña?</a></p>
+							<div class="collapse" id="showForm">
+								<div class='well'>
+									<form action="PHP/password-recovery.php" method="post">
+										<div class="form-group">
+											<input type="email" class="form-control" name="email" placeholder="Ingrese el correo electronico." required>
+										</div>
+										<button type="submit" class="btn btn-dark">Recuperar contraseña</button>
+									</form>
+								</div>
+							</div>
+
+							<hr><p>Si aún no te registras haz <a href="Seleccion.html" title="Create an account">click aquí</a>.</p>
+						</div><!-- /.loginBox -->
+					</div><!-- /.card -->
+				</div><!-- /.col -->
+			</div><!--/.row-->
+		</div><!-- /.container -->
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/Funciones1.js"></script>
+		<script src="js/Funciones2.js"></script>
+		<script src="js/Funciones3.js"></script>
+	</body>
+</html>
